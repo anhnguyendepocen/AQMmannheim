@@ -1,9 +1,10 @@
-Package: AQM
+Package: aqm
 Type: Package
-Title: Package for Advanced Quantitative Method University Mannheim (Gschwend/Stötzer)
+Title: Linear Regression
 Version: 1.0
-Date: 2014-03-06
-Author: Who wrote it
-Maintainer: Who to complain to <lstoetze@mail.uni-mannheim.de>
-Description: All estimation procedure of the lecture 
-License: What license is it under?
+Date: 2014-03-03
+Author: Tobias Witt
+Maintainer: Tobias Witt <towitt@mail.uni-mannheim.de>
+Description: R-package for the course "Advanced Quantitative Methods in Political Science" (University of Mannheim, Spring 2014)
+License: GPL-2
+Depends: MASS, ggplot2
