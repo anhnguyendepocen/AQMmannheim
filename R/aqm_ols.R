@@ -335,7 +335,7 @@ tex.ols	<- function(object,digits=3,conf.level=0.95,booktabs=FALSE, pos="!htbp",
 	    tab,"\\\\[-1.8ex] \n",
 	    midrule,"\\\\[-2ex]")
 	cat("\\multicolumn{5}{@{}l}{Observations: ",object$N,"} \\\\ 
-		  \\multicolumn{5}{@{}l}{$R^2$: ",sprintf(fmt,olsAnova(object)$rsquared),"; adj. $R^2$: ",sprintf(fmt,olsAnova(object)$adj.rsquared),"} \\\\ 	
+		  \\multicolumn{5}{@{}l}{$R^2$: ",sprintf(fmt,anova(object)$rsquared),"; adj. $R^2$: ",sprintf(fmt,anova(object)$adj.rsquared),"} \\\\ 	
 		  \\multicolumn{5}{@{}l}{Residual Std. Error: ",sprintf(fmt,object$sigma)," (df=",object$df,")} \\\\[1.2ex] \n",sep="")	
 	cat(bottomrule)
 	if(sign.stars==TRUE){
